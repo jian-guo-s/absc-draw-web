@@ -14,12 +14,14 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import abscHeader from "@/components/absc-header.vue";
+
 const router = useRouter();
 const isMobile = ref(false)
 
@@ -67,4 +69,5 @@ onMounted(() => {
   background-clip: text;
   color: transparent;
 }
+
 </style>
